@@ -1,0 +1,29 @@
+{
+  "version": "1",
+  "servers": {
+    "email-management": {
+      "transport": {
+        "type": "http",
+        "url": "http://localhost:5555/mcp",
+        "headers": {
+          "EMAIL-USERNAME": "${env:EMAIL_USERNAME}",
+          "EMAIL-PASSWORD": "${env:EMAIL_PASSWORD}"
+        }
+      }
+    },
+
+    
+    "email-local": {
+        
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+            "-y",
+            "node",
+            "/Users/sadie/Code/NodeJs/Email-Management-MCP-main/dist/main.js"
+            ]
+      }
+    }
+  }
+
+

@@ -1,0 +1,1 @@
+export declare const FETCH_EMAILS_PROMPT = "\nPlease summarize the following emails in a table format, the columns should include:\n- Subject\n- Sender\n- Date\n- Snippet\n\nOnly show at most 6 emails in the table. Just mention a short description about emails that was not listed on the table and mention the total count. Here are the emails:\n{{emails}}\n";
