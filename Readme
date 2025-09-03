@@ -1,0 +1,8 @@
+Se agrego una una heramienta que simula el envio de mesajes con los campos:
+- subject
+
+- email destino
+
+- body 
+
+La simulación se hizo meidante un curl en terminal y retorno verdadero
